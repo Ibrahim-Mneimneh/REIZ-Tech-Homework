@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
+body {
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  min-height: 100vh;
+  background: #f1f1f1;
+  font-family: "Poppins";
+}
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  font-weight: 500;
+  font-size: 4vh;
+  background: #fff;
+  padding: 1vh 0vh 1vh 0vh;
+}
+.Navbar > img {
+  width: 2vw;
+  height: 4.5vh;
+  padding-left: 2vw;
+  padding-right: 0.3vw;
+}
+.Navbar > span {
+  font-weight: 600;
+}
+.Filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 5vh;
+  margin-top: 4vh;
+}
+button {
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+.Button {
+  color: #1aac83;
+  border: 2px solid #1aac83;
+}
+.reset {
+  color: #ac1a1a;
+  border: 2px solid #ac1a1a;
+}
+.Button:hover {
+  background-color: #1aac83;
+  color: #fff;
+}
+.reset:hover {
+  background-color: #ac1a1a;
+  color: #fff;
+}
+
+.Countries {
+  width: 100%;
+  min-height: 90vh;
+  margin-top: 3vh;
+}
+.CountryDetails {
+  width: 90vw;
+  min-height: 150px;
+  margin: 2vh 5vw 2vh 5vw;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 20px 0px 5px 20px;
+}
+
+.CountryDetails > h4 {
+  margin: 0 0 0.5vw 0;
+  font-size: 1.2em;
+  color: #1aac83;
+}
+.CountryDetails > p {
+  font-size: 0.9em;
+  color: #555;
+}
+.CountryDetails > span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.Error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Pagination {
+  display: flex;
+  justify-content: center;
+  margin: 3vh 0vw;
+}
+.Pagination button {
+  border: none;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 8px 12px;
+  margin: 0 0.3vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Pagination button:hover {
+  background-color: #ddd;
+}
+
+.Pagination button.active {
+  background-color: #555;
+  color: #fff;
+}
