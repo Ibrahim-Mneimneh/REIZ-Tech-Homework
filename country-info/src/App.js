@@ -27,12 +27,14 @@ function App() {
       return a.name.localeCompare(b.name);
     });
     setCountries(asc);
+    setCurrentPage(1);
   };
   const sortDesc = () => {
     const desc = [...countries].sort((a, b) => {
       return b.name.localeCompare(a.name);
     });
     setCountries(desc);
+    setCurrentPage(1);
   };
 
   const reset = () => {
@@ -44,6 +46,7 @@ function App() {
       return country.region === "Oceania";
     });
     setCountries(inOceania);
+    setCurrentPage(1);
   };
 
   const isSmallerThanLithuania = () => {
